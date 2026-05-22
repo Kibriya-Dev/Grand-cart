@@ -33,7 +33,7 @@ function App() {
 
   return (
 
-    <AuthProvider>
+        <AuthProvider>
     <CartProvider>
 
       <BrowserRouter>

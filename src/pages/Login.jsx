@@ -26,6 +26,9 @@ function Login() {
     }
     setLoading(false);
   };
+  if (!login) {
+  console.log("AuthContext not working");
+}
 
   return (
     <div className="auth-page">
