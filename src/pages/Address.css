@@ -1,0 +1,44 @@
+.address-page {
+  max-width: 500px;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background: #071a12;
+  padding: 30px;
+
+  border-radius: 16px;
+}
+
+.address-page h1 {
+  color: white;
+}
+
+.address-page input,
+.address-page textarea {
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.address-page textarea {
+  height: 120px;
+  resize: none;
+}
+
+.address-page button {
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #c9a227;
+
+  font-weight: bold;
+  cursor: pointer;
+}

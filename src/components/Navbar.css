@@ -1,0 +1,272 @@
+:root {
+  --green: #071a12;
+  --gold: #c9a227;
+  --white: #ffffff;
+  --muted: #b6b6b6;
+}
+.cart {
+  position: relative;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+/* RED BADGE */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+
+  background: red;
+  color: white;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+.cart {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bottom a {
+  cursor: pointer;
+}
+/* NAVBAR */
+.navbar {
+  background: var(--green);
+  border-bottom: 2px solid rgba(201, 162, 39, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* TOP SECTION */
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 35px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--white);
+}
+
+.logo .gold {
+  color: var(--gold);
+}
+
+/* SEARCH BOX (FIXED) */
+.search-box {
+  flex: 1;
+  display: flex;
+  max-width: 650px;
+  margin: 0 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 11px 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* SEARCH BUTTON (ONLY ONE STYLE) */
+.search { 
+  background: var(--gold) !important;
+  border: none  !important;
+  padding: 0 18px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 16px !important;
+  margin-top: 0 !important;
+  border-radius: 0px;
+}
+
+/* RIGHT SIDE */
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.login-btn {
+ background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--white);
+    padding: 10px 29px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.login-btn:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+.cart {
+  font-size: 22px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* BOTTOM NAV */
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 10px;
+  background: #06140e;
+}
+
+.nav-bottom a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.25s;
+
+}
+
+.nav-bottom a:hover {
+  color: var(--gold);
+}
+@media (max-width: 1024px) {
+
+  .nav-top {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .search-box {
+    order: 3;
+    width: 100%;
+    margin: 10px 0 0 0;
+    max-width: 100%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .right-actions {
+    gap: 10px;
+  }
+}
+/* LEFT SIDE */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .nav-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 14px 18px;
+  }
+
+  .nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* SEARCH */
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* RIGHT */
+  .right-actions {
+    justify-content: center;
+  }
+
+  /* MENU */
+  .nav-bottom {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .nav-bottom.active {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+
+  .nav-bottom {
+    gap: 8px;
+  }
+
+  .nav-bottom a {
+    font-size: 12px;
+  }
+
+  .login-btn {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+
+  .cart {
+    font-size: 20px;
+  }
+}

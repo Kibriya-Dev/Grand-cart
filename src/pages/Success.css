@@ -1,0 +1,32 @@
+.success-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #071a12;
+}
+
+.box {
+  background: #0b1f16;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  max-width: 400px;
+}
+
+.order-id {
+  font-size: 18px;
+  color: #c9a227;
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  background: #c9a227;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}

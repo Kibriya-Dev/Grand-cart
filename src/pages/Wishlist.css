@@ -1,0 +1,177 @@
+.wishlist-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* EMPTY STATE */
+.empty-box {
+  text-align: center;
+  padding: 60px;
+  background: #0b1f16;
+  border-radius: 16px;
+  color: white;
+}
+
+.empty-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #c9a227;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.wishlist-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* main content grows */
+.wishlist-page {
+  flex: 1;
+}
+
+/* GRID */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+.wishlist-card {
+  background: #0b1f16;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.wishlist-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.img-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* INFO */
+.info {
+  padding: 12px;
+}
+
+.info h3 {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #c9a227;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #c9a227;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.wish{
+    padding: 10px;
+}
+  .wishlist-page {
+    padding: 1px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .wishlist-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .wishlist-card {
+    border-radius: 10px;
+  }
+
+  .img-box img {
+    height: 140px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .info h3 {
+    font-size: 13px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cart-btn,
+  .remove-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .empty-box {
+    padding: 30px 20px;
+  }
+
+}

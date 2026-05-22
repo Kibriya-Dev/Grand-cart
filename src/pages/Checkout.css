@@ -1,0 +1,41 @@
+.checkout-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.box {
+  background: #0b1f16;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.saved-address {
+  background: #0b1f16;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.saved-address h3 {
+  margin-bottom: 5px;
+}
+
+.saved-address p {
+  color: #ccc;
+  margin-bottom: 5px;
+}
